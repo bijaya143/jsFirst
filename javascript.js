@@ -1,85 +1,112 @@
-//log to console
-console.log('hello monseour Dracula');
-
-//console error
-console.error('This is an error');
-
-//console to table
-console.table({a:1, b:2});
-
-//var to declare variable
-
-//naming conventions
-//Dont use any reserved JS keywords (console)
-//shouldn't start variable with number (0-9)
-//always start variable with letter or _ 
-//case sensitive
-//use camelCase
-
-//declaring variables with var, let & const
-var name = 'bijaya';
-
-console.log(name);
-
-name = 'dary';
-console.log(name);
-
-var job;
-console.log(job);
-
-job = 'Manager';
-console.log(job);
-
-//let
-let fName = 'Pugu';
-console.log(fName);
-
-//const
-const car = 'mercedes';
-console.log(car);
-
-//have to assign it to a value in const
-// const animal;
-// console.log(animal);
-
-const person = 
+//conditional statements
+let bool = false;
+if(bool)
     {
-        name: 'Bijaya',
-        age: 22,
-        phone: '+9779862712972'
-    };
-    person.name = 'Bijaya Majhi';
+        console.log("This statement is true");
+    }
+    else
+    [
+        console.log("This statement is false")
+    ]
 
-console.log(person);
+let x = 10;
+let y = 12;
+if(x == 3 && y == 2)
+    {
+        console.log("True!");
+    }
+    else if (x==9 || y ==5)
+    {
+        console.log("Both true");
+    }
+    else
+    {
+        console.log("The statement is wrong!");
+    }
 
-//data type
-//boolean =true/false
-//undefined 
-//number 
-//null = null
-//string
-//symbol  = Symbol()
+//SWITCH 
+let a = 5;
 
-let gName = 'Sweta';
-console.log(gName);
-console.log(typeof gName);
+switch (a){
+    case 1:
+    console.log("the num is 1");
+    break;
 
-//reference types
-const animals = ['pug', 'lab', 'german'];
-//const animals = new Array('pug', 'lab', 'german');
+    case 2:
+    console.log("num is 2");
+    break;
 
-console.log(animals);
+    case 5:
+    console.log("num is 5");
 
-//object literal
-var myInfo = 
+    default: "no found";
+}
+
+//LOOPS and ITERATION
+//while
+//do while
+let b = 1;
+while(b < 10)
 {
-    name: 'bijaya Majhi',
-    age: 22,
-    Academic: 'undergraduate',
-    city: 'Lalitpur'
-};
-console.log(myInfo);
+    console.log("Number is " +b);
+    b++;
+    // b += 2
+}
 
-//date
-const today = new Date();
-console.log(today);
+//for loop
+for(c=0; c<5; c++)
+{
+    console.log("Number is " + c);
+}
+
+//FUNCTION
+function showMessage()
+{
+    console.log("First Message");
+}
+showMessage();
+
+//adding parameters
+function printName(fname)
+{
+    console.log("My name is " + fname);
+}
+printName('bijaya');
+
+function showName(num1, num2)
+{
+    return num1 + num2;
+}
+
+console.log(showName(1, 4));
+
+
+//window object (IMPORTANT)
+
+//alert
+//window.alert('hello');
+
+//prompt
+// const input = prompt();
+// alert(input);
+
+//confirm
+// if(confirm('Do You like this?'))
+// {
+//     console.log('yes');
+// }
+// else{
+//     console.log('No');
+// }
+
+//height & width
+let q;
+q = window.outerHeight;
+q = window.outerWidth;
+
+//inner height & width
+q = window.innerHeight;
+
+//location object
+q  = window.location;
+console.log(q);
