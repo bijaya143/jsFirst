@@ -109,4 +109,16 @@ q = window.innerHeight;
 
 //location object
 q  = window.location;
+
+q = window.location.search;
+
+//redirect
+//q = window.location.href = 'https://apple.com';
+
+//reload
+//q = window.location.reload();
+
+//navigator
+q = window.navigator;
 console.log(q);
+
